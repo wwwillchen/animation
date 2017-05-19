@@ -177,7 +177,8 @@ export function connectAnimation(WrappedComponent, animations = {}, options = de
       const { layout } = event.nativeEvent;
       const driver = this.getDriver();
       if (!_.isEqual(layout, this.state.layout)) {
-        this.setState({ layout }, () => this.resolveStyle(this.props, driver));
+        // Causes some sort of weird warning
+        this.setState({ layout }, /* ( ) => this.resolveStyle(this.props, driver) */);
       }
     }
 
