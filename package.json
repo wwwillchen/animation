@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "hoist-non-react-statics": "^1.2.0",
-    "lodash": "^4.15.0"
+    "lodash": "*"
   },
   "peerDependencies": {
-    "react": "^15.0.0",
+    "react": "*",
     "react-native": ">=0.28.0"
   },
   "keywords": [
